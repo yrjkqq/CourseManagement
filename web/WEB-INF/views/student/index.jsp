@@ -29,7 +29,7 @@
                 <div class="panel-heading">
                     <strong>学生列表</strong>
                     <div class="btn-group pull-right" style="margin-top: -5px" role="group">
-                        <%--todo 使用模态框添加学生--%>
+                        <%-- 使用模态框添加学生--%>
                         <%--使用 href 标签打开模态框--%>
                         <a href="#myModal" data-toggle="modal" class="btn btn-sm btn-primary" role="button">添加</a>
 
@@ -76,7 +76,8 @@
                         <tr>
                             <td>${student.sid}</td>
                             <td>${student.sname}</td>
-                            <td><a href="#" role="button" class="btn btn-danger btn-sm">删除</a></td>
+                            <%--将当前选课学生作为参数传输--%>
+                            <td><a href="student/selectCourse/${student.sid}" role="button" class="btn btn-primary btn-sm">选课</a></td>
                         </tr>
                     </c:forEach>
                     </tbody>

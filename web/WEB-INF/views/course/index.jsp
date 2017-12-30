@@ -29,7 +29,7 @@
                 <div class="panel-heading">
                     <strong>课程列表</strong>
                     <div class="btn-group pull-right" style="margin-top: -5px" role="group">
-                        <%--todo 使用模态框添加课程--%>
+                        <%-- 使用模态框添加课程--%>
                         <a href="#myModal" data-toggle="modal" class="btn btn-sm btn-primary" role="button">添加</a>
 
                         <!-- Modal -->
