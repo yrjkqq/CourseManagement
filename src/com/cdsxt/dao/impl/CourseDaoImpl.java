@@ -29,4 +29,14 @@ public class CourseDaoImpl implements CourseDao {
     public void add(Course course) {
         this.getSession().save(course);
     }
+
+    @Override
+    public void delete(Course course) {
+        this.getSession().delete(course);
+    }
+
+    @Override
+    public Course queryById(Integer cid) {
+        return (Course) this.getSession().get(Course.class, cid);
+    }
 }
